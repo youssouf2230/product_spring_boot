@@ -4,6 +4,7 @@
 ##### - Vidéo à suivre :  https://www.youtube.com/watch?v=FHy7raIldgg
 ##### 1. Créer un projet Spring Boot avec les dépendances : Spring Web, Spring Data JOA, H2, MySQL, Thymeleaf, Lombock, Spring Security, Spring Validation
 ##### 2. Créer l'entité JPA Product
+![image](https://github.com/user-attachments/assets/4e11f49b-eb7c-49fd-95ef-073b888a3753)
 #### 3. Créer l'interface ProductRepository basée sur Spring Data
 #### 4.Tester la couche DAO
 #### 5. Désactiver la protection par défaut de spring security
