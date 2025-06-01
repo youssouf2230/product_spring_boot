@@ -21,6 +21,7 @@
   ![image](https://github.com/user-attachments/assets/9e338e02-cbba-4e19-83a5-a7550ca2b2e7)
 #### 7. Sécuriser l'application avec Spring Security
 ![image](https://github.com/user-attachments/assets/3de0943e-5905-4552-b686-66f3f74f7716)
+![image](https://github.com/user-attachments/assets/2394f1ea-8a45-4b00-879e-278c8da2ffc8)
 
 #### 8. Ajouter d'autres fonctionalités supplémentaires :
     - Recherche des produits
