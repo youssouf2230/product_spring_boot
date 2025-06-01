@@ -25,6 +25,8 @@
 
 #### 8. Ajouter d'autres fonctionalités supplémentaires :
     - Recherche des produits
+   ![image](https://github.com/user-attachments/assets/48e08aa5-4e68-4379-8148-c2bf953146d1)
+
     - Edition et mise à jour d'un produit
    ![image](https://github.com/user-attachments/assets/a2a423e7-39d4-4b3f-924a-9e62db6c9bd9)
    ![image](https://github.com/user-attachments/assets/4ca7176a-5db7-40de-bc13-f934175ee680)
