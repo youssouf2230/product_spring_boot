@@ -12,9 +12,19 @@
 </head>
 <body>
 <div class="p-3" layout:fragment="content1">
+
+    <!-- Bouton pour admin -->
     <div class="p-3" sec:authorize="hasRole('ADMIN')">
         <a th:href="@{/admin/newProduct}" class="btn btn-primary">New Product</a>
     </div>
+
+    <!-- Formulaire de recherche -->
+    <form method="get" th:action="@{/user/index}" class="d-flex mb-3">
+        <input class="form-control me-2" type="search" name="keyword" th:value="${keyword}" placeholder="Search...">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+    <!-- Tableau des produits -->
     <table class="table table-striped">
         <thead>
         <tr>
@@ -44,6 +54,18 @@
         </tr>
         </tbody>
     </table>
+
+    <!-- Pagination -->
+    <nav th:if="${pages != null}">
+        <ul class="pagination justify-content-center">
+            <li th:each="i, stat : ${pages}" class="page-item"
+                th:classappend="${stat.index} == ${currentPage} ? 'active'">
+                <a class="page-link"
+                   th:href="@{'/user/index'(page=${stat.index}, keyword=${keyword})}"
+                   th:text="${stat.index + 1}"></a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>
