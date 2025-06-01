@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout1}"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="p-3" layout:fragment="content1">
+    <div class="p-3" sec:authorize="hasRole('ADMIN')">
+        <a th:href="@{/admin/newProduct}" class="btn btn-primary">New Product</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th sec:authorize="hasRole('ADMIN')">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${products}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.price}"></td>
+            <td th:text="${p.description}"></td>
+            <td th:text="${p.quantity}"></td>
+            <td sec:authorize="hasRole('ADMIN')">
+                <a onclick="return confirm('Êtes-vous sûrs de vouloir supprimer?')"
+                   class="btn btn-danger"
+                   th:href="@{/admin/delete(id=${p.id})}">
+                    Delete
+                </a>
+                <a class="btn btn-info" th:href="@{/edit(id=${p.id})}">Edit</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
