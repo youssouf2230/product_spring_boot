@@ -20,7 +20,10 @@
     - Saisir et ajouter un produit avec la validation du formulaire
   ![image](https://github.com/user-attachments/assets/9e338e02-cbba-4e19-83a5-a7550ca2b2e7)
 #### 7. Sécuriser l'application avec Spring Security
+![image](https://github.com/user-attachments/assets/3de0943e-5905-4552-b686-66f3f74f7716)
+
 #### 8. Ajouter d'autres fonctionalités supplémentaires :
     - Recherche des produits
     - Edition et mise à jour d'un produit
+    
     - Autres fonctionnalités de votre choix
