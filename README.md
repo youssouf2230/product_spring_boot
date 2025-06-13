@@ -1,6 +1,30 @@
 # product_spring_boot
-### Objectif :
- Créer une application Web JEE basée sur Spring, Spring Data JPA, Hibernate, Tymeleaf et Spring Security qui permet de gérer des produits :
+
+## Introduction
+    Au cours de ce projet, l'objectif a été de crée une application Web JEE avec Spring, Spring Data JPA, Thymeleaf et Spring Security afin de gérer des produits (CRUD, recherches, modifications...).
+    Ce projet consiste à combiner divers aspects du développement d'une application Spring, de la création de l'entité jusqu'à l'implémentation de l'interface graphique.
+
+## Objectif
+    L'objectif de ce projet consiste donc à :
+    
+    Créer une application Spring Boot avec Spring Web, Spring Data JPA, H2, MySQL, Thymeleaf, Spring Security et Validation.
+    
+    Mettre en place une architecture MVC avec un Repository, un Service, et des Contrôleurs Spring.
+    
+    Gérer toutes les opérations CRUD sur les produits, et assurer leur sécurité avec Spring Security.
+
+## But
+    Le but est de :
+    
+    Se familiariser avec le développement d'une application Spring de A à Z.
+    
+    Maîtriser l'utilisation de Spring Security afin de protéger certaines routes de l'application.
+    
+    Utiliser Thymeleaf et Bootstrap afin de rendre l'interface plus esthétique et responsive.
+    
+    Mettre en place la validation des formulaires et d’autres fonctionnalités, telles que la recherche de produits.
+
+
 ##### - Vidéo à suivre :  https://www.youtube.com/watch?v=FHy7raIldgg
 ##### 1. Créer un projet Spring Boot avec les dépendances : Spring Web, Spring Data JOA, H2, MySQL, Thymeleaf, Lombock, Spring Security, Spring Validation
 ##### 2. Créer l'entité JPA Product
@@ -33,3 +57,13 @@
 
     - Autres fonctionnalités de votre choix:
       Ecommerce
+ ## Conclusion
+    Au terme de ce projet :
+    
+    Nous avons réussi à crée une application de gestion de produits avec Spring.
+    
+    Nous avons mis en place toutes les couches de l’application (Model, Repository, Controller, View).
+    
+    Nous avons ajouté des fonctionnalités de sécurité, de validation de formulaires, de pagination, de recherches et d’édition de données.
+    
+    Cette expérience a été l'occasion de pratiquer Spring Security, Spring MVC, Spring Data JPA et Thymeleaf dans un cas d’étude concret.
